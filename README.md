@@ -10,7 +10,7 @@
 2. Updated Date is the date of updating the ingredient in the system
 3. Cassandra version is 3.0 or above
 
-## Data Model
+## Data Model - Cassandra Database to be used as the persistence system
 1. Two tables to be created - Recipe and Ingredient_Update
 2. Recipe Table will have columns --> recipe_id, recipe_name, description
 3. Ingredient_Update will have columns --> recipe_id, ingredient_name, active, updated_date (alias recipe_updated_date), created_date (alias data_extraction_date)
