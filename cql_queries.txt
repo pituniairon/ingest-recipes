@@ -1,0 +1,7 @@
+## Number of recipes updated every hour
+select hour(updated_date), count() from recipe.Ingredient_Update
+groupby hour(updated_date);
+
+## Number of recipes that got updated at exactly 10:00 in the entire year
+select count(recipe_id) from recipe.Ingredient_Update
+where hour(updated_date) = 10 and updated_date <= ("2017-12-31 00:00:00") and updated_date >= (("2017-01-01 00:00:00");
